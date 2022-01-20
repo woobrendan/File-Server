@@ -24,9 +24,9 @@ server.on('connect', (client) => {
   client.write('Welcome to the server! \n');
 });
 
-server.on('timeout', () => {
-  console.log(`Is anyone there?`)
-})
+// server.on('timeout', () => {
+//   console.log(`Is anyone there?`)
+// })
 
 server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
